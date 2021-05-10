@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet author="admin" id="2">
+        <insert tableName="trade">
+            <column name="id" valueNumeric="1"/>
+            <column name="price" value="2.96"/>
+            <column name="quantity" value="16.0"/>
+            <column name="side" value="BUY"/>
+            <column name="instrument" value="ICX_CRO"/>
+            <column name="timestamp" value="1591710781946"/>
+            <column name="datatime" value="1591710781947"/>
+        </insert>
+        <insert tableName="trade">
+            <column name="id" valueNumeric="2"/>
+            <column name="price" value="0.007749"/>
+            <column name="quantity" value="115.0"/>
+            <column name="side" value="BUY"/>
+            <column name="instrument" value="VET_USDT"/>
+            <column name="timestamp" value="1591707701898"/>
+            <column name="datatime" value="1591707701899"/>
+        </insert>
+        <insert tableName="trade">
+            <column name="id" valueNumeric="3"/>
+            <column name="price" value="25.676"/>
+            <column name="quantity" value="0.55"/>
+            <column name="side" value="SELL"/>
+            <column name="instrument" value="ICX_CRO"/>
+            <column name="timestamp" value="1591710786154"/>
+            <column name="datatime" value="1591710786155"/>
+        </insert>
+        <insert tableName="trade">
+            <column name="id" valueNumeric="4"/>
+            <column name="price" value="2.9016"/>
+            <column name="quantity" value="0.6"/>
+            <column name="side" value="SELL"/>
+            <column name="instrument" value="ICX_CRO"/>
+            <column name="timestamp" value="1591710783298"/>
+            <column name="datatime" value="1591710783300"/>
+        </insert>
+        <insert tableName="trade">
+            <column name="id" valueNumeric="5"/>
+            <column name="price" value="2.7662"/>
+            <column name="quantity" value="0.58"/>
+            <column name="side" value="SELL"/>
+            <column name="instrument" value="ICX_CRO"/>
+            <column name="timestamp" value="1591710784498"/>
+            <column name="datatime" value="1591710784499"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
+

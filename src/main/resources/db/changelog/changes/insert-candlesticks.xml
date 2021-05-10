@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet author="admin" id="2">
+        <insert tableName="candlesticks">
+            <column name="id" valueNumeric="1"/>
+            <column name="open" value="2.96"/>
+            <column name="high" value="16.0"/>
+            <column name="low" value="BUY"/>
+            <column name="" value="ICX_CRO"/>
+            <column name="timestamp" value="1591710781946"/>
+            <column name="datatime" value="1591710781947"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
+
+<!--             <column autoIncrement="true" name="id" type="number">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="open" type="number">
+                <constraints nullable="false"/>
+            </column>
+            <column name="high" type="number">
+                <constraints nullable="false"/>
+            </column>
+            <column name="low" type="varchar(10)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="close" type="number">
+                <constraints nullable="false"/>
+            </column>
+            <column name="volume" type="number">
+                <constraints nullable="false"/>
+            </column>                
+            <column name="timestamp" type="number">
+                <constraints nullable="false"/>
+            </column>    -->

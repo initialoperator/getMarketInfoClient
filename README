@@ -1,0 +1,11 @@
+This program is a web service of 2 endpoints: one to get trade data and the other one to get candle stick info based on the trade data
+ 
+Trade data is queries from an in-memory H2 database. Only trade data will always inserted on application's startup and are only maintained as the application is running.
+ 
+ 
+ to see the data on database, once the application is running, on your browser, go to
+ http://localhost:8080/h2-console
+ with this parameters to login
+ jdbc url: jdbc:h2:mem:test;
+ username: sa
+ password: sa
